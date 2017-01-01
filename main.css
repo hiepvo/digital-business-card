@@ -43,12 +43,12 @@ label {
   -webkit-border-radius: 0.5rem;
   border-radius: 0.5rem;
   color: #ffffff;
-  -moz-backface-visibility: hidden;
+
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
-
+  -webkit-transform: rotateY(0deg);
   background-image: url("images/bg2.png");
-
 }
 
 .card .back {
@@ -64,7 +64,6 @@ label {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-
   background-image: url("images/siouxfalls.jpg");
 
 }
@@ -79,6 +78,7 @@ label [type="checkbox"]:checked + .card {
   -moz-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
+
 /********* Content ***********/
 
 header {
