@@ -1,1 +1,1 @@
-# digital-business-card
+# A simple digital business card
