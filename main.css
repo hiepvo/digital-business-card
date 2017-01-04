@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Lato|Slabo+27px|Josefin+Slab:400,700);
 
 html {
   box-sizing: border-box;
@@ -39,16 +39,11 @@ label {
   position: relative;
   width: 100%;
   height: 100%;
-  -moz-border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  border-radius: 0.5rem;
-  color: #ffffff;
 
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
+  color: #ffffff;
   -webkit-transform: rotateY(0deg);
   background-image: url("images/bg2.png");
+
 }
 
 .card .back {
@@ -60,11 +55,23 @@ label {
   -webkit-transform: rotateX(180deg);
   -moz-transform: rotateX(180deg);
   transform: rotateX(180deg);
-  background-image: url("images/bg2.png");
+  background-image: url("images/siouxfalls.jpg");
+
+}
+
+.card .back, .card .front {
+
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-image: url("images/siouxfalls.jpg");
+
+  -webkit-transition: box-shadow 1s;
+  -moz-transition: box-shadow 1s;
+  transition: box-shadow 1s;
 
 }
 
@@ -78,6 +85,33 @@ label [type="checkbox"]:checked + .card {
   -moz-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
+
+
+label:hover [type="checkbox"]:checked + .card {
+  -webkit-transform: rotateX(160deg);
+  -moz-transform: rotateX(160deg);
+  transform: rotateX(160deg);
+}
+
+label:hover .card .front {
+  webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+
+}
+
+label:hover .card .back {
+  -webkit-box-shadow: 0 -6px 26px 0 rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 -6px 26px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 -6px 26px 0 rgba(0,0,0,0.3);
+}
+
+label:hover .card {
+  -webkit-transform: rotateX(16deg);
+  -moz-transform: rotateX(16deg);
+  transform: rotateX(16deg);
+}
+
 
 /********* Content ***********/
 
@@ -187,4 +221,3 @@ footer > div {
 footer .icons {
   padding-left: 24rem;
 }
-
